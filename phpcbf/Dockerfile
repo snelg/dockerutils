@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV PHPCBF_VERSION=2.8.1
+ENV PHPCBF_VERSION=2.9.1
 
 RUN apk --no-cache add php7 php7-phar php7-zlib php7-tokenizer php7-simplexml php7-openssl ca-certificates patch \
     && php -r "copy('https://github.com/squizlabs/PHP_CodeSniffer/releases/download/$PHPCBF_VERSION/phpcbf.phar', '/usr/local/bin/phpcbf');" \
